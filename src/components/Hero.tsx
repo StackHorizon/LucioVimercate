@@ -9,18 +9,13 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            Fabbro <span className="text-amber-400 dark:text-amber-300">Professionale</span>
+            Fabbro <span className="text-amber-400 dark:text-amber-300">Luciano</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-slate-300 dark:text-slate-200">
-            Servizi di fabbro h24, serrature, cancelli, inferriate e molto altro. 
-            Esperienza, qualità e rapidità per ogni vostra esigenza.
+            Interventi su serrature, cilindri, casseforti, serrande e tapparelle. Affidabilità, competenza e attenzione ai dettagli per soluzioni durature e su misura.
           </p>
           
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-12">
-            <div className="flex items-center space-x-2">
-              <Phone className="h-6 w-6 text-amber-400 dark:text-amber-300" />
-              <span className="text-lg">Pronto Intervento 24/7</span>
-            </div>
             <div className="flex items-center space-x-2">
               <Clock className="h-6 w-6 text-amber-400 dark:text-amber-300" />
               <span className="text-lg">Intervento Rapido</span>
@@ -36,7 +31,7 @@ const Hero = () => {
               onClick={() => document.getElementById('contatti')?.scrollIntoView({ behavior: 'smooth' })}
               className="bg-amber-500 hover:bg-amber-600 dark:bg-amber-600 dark:hover:bg-amber-700 text-slate-900 dark:text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105"
             >
-              Chiama Ora: 345 123 4567
+              Chiama Ora: 329 328 5783
             </button>
             <button 
               onClick={() => document.getElementById('servizi')?.scrollIntoView({ behavior: 'smooth' })}

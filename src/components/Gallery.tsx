@@ -64,13 +64,7 @@ const Gallery = () => {
             </div>
           ))}
         </div>
-
-        <div className="mt-12 text-center">
-          <p className="text-slate-600 dark:text-slate-300 mb-6">Vuoi vedere altri nostri lavori?</p>
-          <button className="bg-slate-900 hover:bg-slate-800 dark:bg-slate-800 dark:hover:bg-slate-700 text-white font-bold py-3 px-8 rounded-lg transition-colors">
-            Contattaci per un Preventivo
-          </button>
-        </div>
+ 
       </div>
     </section>
   );

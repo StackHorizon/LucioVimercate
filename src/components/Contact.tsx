@@ -9,8 +9,7 @@ const Contact = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">Contattaci</h2>
           <p className="text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-            Siamo sempre disponibili per rispondere alle vostre esigenze. 
-            Contattateci per un preventivo gratuito
+            Siamo sempre disponibili per rispondere alle vostre esigenze.   
           </p>
         </div>
 
@@ -22,19 +21,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">Telefono</h3>
-                <p className="text-slate-600 dark:text-slate-300 mb-1">Cellulare: +39 345 123 4567</p>
-                <p className="text-slate-600 dark:text-slate-300">Fisso: +39 02 1234 5678</p>
-              </div>
-            </div>
-
-            <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0 w-12 h-12 bg-amber-100 dark:bg-amber-900/30 rounded-full flex items-center justify-center">
-                <Mail className="h-6 w-6 text-amber-600 dark:text-amber-400" />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">Email</h3>
-                <p className="text-slate-600 dark:text-slate-300">info@fabbrorossi.com</p>
-                <p className="text-slate-600 dark:text-slate-300">emergenze@fabbrorossi.com</p>
+                <p className="text-slate-600 dark:text-slate-300 mb-1">Cellulare: +39 329 328 5783</p>
               </div>
             </div>
 
@@ -43,9 +30,9 @@ const Contact = () => {
                 <MapPin className="h-6 w-6 text-amber-600 dark:text-amber-400" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">Indirizzo</h3>
-                <p className="text-slate-600 dark:text-slate-300">Via Roma 123</p>
-                <p className="text-slate-600 dark:text-slate-300">20100 Milano (MI)</p>
+                <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">Sede legale</h3>
+                <p className="text-slate-600 dark:text-slate-300">Indirizzo</p>
+                <p className="text-slate-600 dark:text-slate-300">CAP, città</p>
               </div>
             </div>
 
@@ -55,9 +42,8 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">Orari</h3>
-                <p className="text-slate-600 dark:text-slate-300">Lun-Ven: 8:00 - 18:00</p>
-                <p className="text-slate-600 dark:text-slate-300">Sab: 8:00 - 12:00</p>
-                <p className="text-amber-600 dark:text-amber-400 font-semibold">Emergenze: 24/7</p>
+                <p className="text-slate-600 dark:text-slate-300">Lun-Ven: 7:00 - 19:00</p>
+                <p className="text-slate-600 dark:text-slate-300">Sab: 8:00 - 13:00</p>
               </div>
             </div>
           </div>

@@ -20,7 +20,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2">
             <Hammer className="h-8 w-8 text-amber-500 dark:text-amber-400" />
-            <span className="text-xl font-bold">Fabbro Rossi</span>
+            <span className="text-xl font-bold">Fabbro Luciano</span>
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
