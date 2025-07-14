@@ -1,41 +1,31 @@
 
 import React from 'react';
-import { Phone, Clock, Award } from 'lucide-react';
+import { Phone } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="home" className="relative bg-gradient-to-r from-slate-900 to-slate-800 dark:from-slate-950 dark:to-slate-900 text-white py-20">
-      <div className="absolute inset-0 bg-black/20 dark:bg-black/40"></div>
-      <div className="container mx-auto px-4 relative z-10">
+    <section id="home" className="bg-slate-900 dark:bg-slate-950 text-white py-20">
+      <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            Fabbro <span className="text-amber-400 dark:text-amber-300">Luciano</span>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">
+            Fabbro  Luciano 
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-slate-300 dark:text-slate-200">
-            Interventi su serrature, cilindri, casseforti, serrande e tapparelle. Affidabilità, competenza e attenzione ai dettagli per soluzioni durature e su misura.
-          </p>
           
-          <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-12">
-            <div className="flex items-center space-x-2">
-              <Clock className="h-6 w-6 text-amber-400 dark:text-amber-300" />
-              <span className="text-lg">Intervento Rapido</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <Award className="h-6 w-6 text-amber-400 dark:text-amber-300" />
-              <span className="text-lg">25+ Anni di Esperienza</span>
-            </div>
-          </div>
+          <p className="text-xl md:text-2xl mb-12 text-slate-300 max-w-3xl mx-auto">
+           Il tuo fabbro di fiducia da oltre 25 anni. Professionalità, rapidità e qualità garantita.
+          </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button 
-              onClick={() => document.getElementById('contatti')?.scrollIntoView({ behavior: 'smooth' })}
-              className="bg-amber-500 hover:bg-amber-600 dark:bg-amber-600 dark:hover:bg-amber-700 text-slate-900 dark:text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105"
-            >
-              Chiama Ora: 329 328 5783
-            </button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a href="tel:3293285783">
+              <button className="bg-amber-500 hover:bg-amber-600 text-white font-semibold py-4 px-8 rounded-lg transition-colors flex items-center space-x-2">
+                <Phone className="h-5 w-5" />
+                <span>Chiama Ora: 329 328 5783</span>
+              </button>
+            </a>
+            
             <button 
               onClick={() => document.getElementById('servizi')?.scrollIntoView({ behavior: 'smooth' })}
-              className="border-2 border-amber-400 dark:border-amber-300 text-amber-400 dark:text-amber-300 hover:bg-amber-400 dark:hover:bg-amber-300 hover:text-slate-900 dark:hover:text-slate-900 font-bold py-4 px-8 rounded-lg transition-all duration-300"
+              className="border border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-white font-semibold py-4 px-8 rounded-lg transition-colors"
             >
               Scopri i Servizi
             </button>
