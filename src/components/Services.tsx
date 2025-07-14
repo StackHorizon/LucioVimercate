@@ -7,38 +7,38 @@ const Services = () => {
     {
       icon: Key,
       title: "Apertura Porte",
-      description: "Servizio di apertura porte 24/7 senza danni alla serratura",
-      features: ["Nessun danno", "Arrivo rapido", "Prezzi fissi"]
+      description: "Servizio di apertura porte 24/7 senza danni alla serratura" ,
+      features: []
     },
     {
       icon: Lock,
       title: "Sostituzione Serrature",
-      description: "Installazione di serrature certificate di alta sicurezza",
-      features: ["Certificazioni", "Garanzia", "Consulenza"]
+      description: "Installazione di serrature certificate di alta sicurezza" ,
+      features: []
     },
     {
       icon: Shield,
       title: "Porte Blindate",
-      description: "Porte blindate classe 3-4 con certificazione antieffrazione",
-      features: ["Classe 3-4", "Certificazioni", "Su misura"]
+      description: "Porte blindate classe 3-4 con certificazione antieffrazione" ,
+      features: []
     },
     {
       icon: Home,
       title: "Cancelli e Inferriate",
-      description: "Realizzazione su misura di cancelli e inferriate decorative",
-      features: ["Su misura", "Design unico", "Materiali top"]
+      description: "Realizzazione su misura di cancelli e inferriate decorative" ,
+      features: []
     },
     {
       icon: Wrench,
       title: "Riparazioni",
-      description: "Riparazione di serrature, maniglie e meccanismi",
-      features: ["Diagnosi", "Riparazione", "Manutenzione"]
+      description: "Riparazione di serrature, maniglie e meccanismi" ,
+      features: []
     },
     {
       icon: Settings,
       title: "Manutenzione",
-      description: "Servizi di manutenzione preventiva per sistemi di sicurezza",
-      features: ["Check-up", "Prevenzione", "Assistenza"]
+      description: "Servizi di manutenzione preventiva per sistemi di sicurezza" ,
+      features: []
     }
   ];
 
