@@ -107,14 +107,7 @@ const Services = () => {
               >
                 <span>Chiama Ora: 329 328 5783</span>
                 <ArrowRight className="h-5 w-5" />
-              </a>
-              <button 
-                onClick={() => document.getElementById('contatti')?.scrollIntoView({ behavior: 'smooth' })}
-                className="inline-flex items-center space-x-2 border-2 border-white text-white hover:bg-white hover:text-amber-600 font-semibold py-4 px-8 rounded-xl transition-all duration-300"
-              >
-                <span>Scopri di Più</span>
-                <ArrowRight className="h-5 w-5" />
-              </button>
+              </a> 
             </div>
           </div>
         </div>
