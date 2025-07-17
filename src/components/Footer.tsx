@@ -34,7 +34,7 @@ const Footer = () => {
               <li>Apertura Porte</li>
               <li>Sostituzione Serrature</li>
               <li>Porte Blindate</li>
-              <li>Cancelli e Inferriate</li> 
+              <li>Serrande e Tapparelle</li> 
             </ul>
           </div>
 
@@ -72,6 +72,10 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-slate-400 text-sm">
               © { new Date().getFullYear()} Fabbro Luciano Vimercate. Tutti i diritti riservati.
+              <p>Sviluppato da <a href='https://stackhorizon.it' target='_blank'>StackHorizon</a></p>
+            </div>
+            <div className="text-slate-400 text-sm">
+              <a href="/privacyPolicy">Privacy Policy</a> | <a href="/terms-of-service">Terms of Service</a> | <a href="/cookie-policy">Cookie Policy</a>
             </div>
             <div className="text-slate-400 text-sm">
               P.IVA: 09082580961

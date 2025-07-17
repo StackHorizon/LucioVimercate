@@ -66,23 +66,7 @@ const Gallery = () => {
             </div>
           ))}
         </div>
-
-        <div className="mt-16 text-center">
-          <div className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl p-8">
-            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
-              Hai un progetto in mente?
-            </h3>
-            <p className="text-slate-600 dark:text-slate-300 mb-6">
-              Contattaci per un preventivo personalizzato e gratuito
-            </p>
-            <a 
-              href="tel:3293285783" 
-              className="inline-flex items-center space-x-2 bg-amber-500 hover:bg-amber-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
-            >
-              <span>Richiedi Preventivo</span>
-            </a>
-          </div>
-        </div>
+ 
       </div>
     </section>
   );
