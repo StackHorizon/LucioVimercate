@@ -27,14 +27,14 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Services */}
+          {/* Legal Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Servizi</h3>
+            <h3 className="text-lg font-semibold mb-4">Informazioni Legali</h3>
             <ul className="space-y-2 text-slate-300">
-              <li>Apertura Porte</li>
-              <li>Sostituzione Serrature</li>
-              <li>Porte Blindate</li>
-              <li>Serrande e Tapparelle</li> 
+              <li><a href="/privacyPolicy.html" className="hover:text-amber-400 transition-colors">Privacy Policy</a></li>
+              <li><a href="/terms-of-service.html" className="hover:text-amber-400 transition-colors">Termini di Servizio</a></li>
+              <li><a href="/cookie-policy.html" className="hover:text-amber-400 transition-colors">Cookie Policy</a></li>
+              <li className="pt-2 text-slate-400 text-sm">P.IVA: 09082580961</li>
             </ul>
           </div>
 
@@ -72,10 +72,13 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-slate-400 text-sm">
               © { new Date().getFullYear()} Fabbro Luciano Vimercate. Tutti i diritti riservati.
-              <p>Sviluppato da <a href='https://stackhorizon.it' target='_blank'>StackHorizon</a></p>
+              <p>Sviluppato da <a href='https://stackhorizon.it' target='_blank' className="text-amber-400 hover:text-amber-300">StackHorizon</a></p>
             </div>
             <div className="text-slate-400 text-sm">
-              <a href="/privacyPolicy">Privacy Policy</a> | <a href="/terms-of-service">Terms of Service</a> | <a href="/cookie-policy">Cookie Policy</a>
+              <a href="/" className="hover:text-amber-400 transition-colors">Home</a> | 
+              <a href="/privacyPolicy.html" className="hover:text-amber-400 transition-colors">Privacy</a> | 
+              <a href="/terms-of-service.html" className="hover:text-amber-400 transition-colors">Termini</a> | 
+              <a href="/cookie-policy.html" className="hover:text-amber-400 transition-colors">Cookie</a>
             </div>
             <div className="text-slate-400 text-sm">
               P.IVA: 09082580961
