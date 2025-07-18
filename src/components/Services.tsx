@@ -7,7 +7,7 @@ const Services = () => {
     {
       icon: Key,
       title: "Apertura Porte",
-      description: "Servizio professionale di apertura porte senza danneggiamenti. Interveniamo su porte blindate, legno, PVC e acciaio con tecniche specializzate.",
+      description: "Servizio professionale di apertura porte senza danneggiamenti. ",
       features: [ 
       ]
     },

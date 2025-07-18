@@ -4,34 +4,22 @@ import React from 'react';
 const Gallery = () => {
   const images = [
     {
-      src: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&h=400&fit=crop",
-      alt: "Cancello in ferro battuto",
-      title: "Cancelli Artistici"
+      src: "imm1.jpeg", 
     },
     {
-      src: "https://images.unsplash.com/photo-1487252665478-49b61b47f302?w=600&h=400&fit=crop",
-      alt: "Serratura di sicurezza",
-      title: "Serrature di Sicurezza"
+      src: "imm2.jpeg", 
     },
     {
-      src: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&h=400&fit=crop",
-      alt: "Inferriate decorative",
-      title: "Inferriate su Misura"
+      src: "imm3.jpeg", 
     },
     {
-      src: "https://images.unsplash.com/photo-1487252665478-49b61b47f302?w=600&h=400&fit=crop",
-      alt: "Porta blindata",
-      title: "Porte Blindate"
+      src: "imm4.jpeg", 
     },
     {
-      src: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&h=400&fit=crop",
-      alt: "Ringhiere in ferro",
-      title: "Ringhiere Artistiche"
+      src: "imm5.jpeg", 
     },
     {
-      src: "https://images.unsplash.com/photo-1487252665478-49b61b47f302?w=600&h=400&fit=crop",
-      alt: "Cancello automatico",
-      title: "Automazioni"
+      src: "imm6.jpeg", 
     }
   ];
 
@@ -51,18 +39,12 @@ const Gallery = () => {
           {images.map((image, index) => (
             <div 
               key={index}
-              className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-shadow bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700"
+              className="group relative overflow-hidden rounded-xl shadow-lg   dark:bg-slate-800 border border-slate-200 dark:border-slate-700"
             >
               <img 
-                src={image.src}
-                alt={image.alt}
-                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="text-lg font-semibold">{image.title}</h3>
-                </div>
-              </div>
+                src={image.src} 
+                className="w-full h-64 object-cover  "
+              /> 
             </div>
           ))}
         </div>
