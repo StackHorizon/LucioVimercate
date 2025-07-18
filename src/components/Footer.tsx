@@ -31,9 +31,9 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Informazioni Legali</h3>
             <ul className="space-y-2 text-slate-300">
-              <li><a href="/privacyPolicy.html" className="hover:text-amber-400 transition-colors">Privacy Policy</a></li>
-              <li><a href="/terms-of-service.html" className="hover:text-amber-400 transition-colors">Termini di Servizio</a></li>
-              <li><a href="/cookie-policy.html" className="hover:text-amber-400 transition-colors">Cookie Policy</a></li>
+              <li><a href="/LucioVimercate/privacyPolicy.html" className="hover:text-amber-400 transition-colors">Privacy Policy</a></li>
+              <li><a href="/LucioVimercate/terms-of-service.html" className="hover:text-amber-400 transition-colors">Termini di Servizio</a></li>
+              <li><a href="/LucioVimercate/cookie-policy.html" className="hover:text-amber-400 transition-colors">Cookie Policy</a></li>
               <li className="pt-2 text-slate-400 text-sm">P.IVA: 09082580961</li>
             </ul>
           </div>
@@ -75,10 +75,10 @@ const Footer = () => {
               <p>Sviluppato da <a href='https://stackhorizon.it' target='_blank' className="text-amber-400 hover:text-amber-300">StackHorizon</a></p>
             </div>
             <div className="text-slate-400 text-sm">
-              <a href="/" className="hover:text-amber-400 transition-colors">Home</a> | 
-              <a href="/privacyPolicy.html" className="hover:text-amber-400 transition-colors">Privacy</a> | 
-              <a href="/terms-of-service.html" className="hover:text-amber-400 transition-colors">Termini</a> | 
-              <a href="/cookie-policy.html" className="hover:text-amber-400 transition-colors">Cookie</a>
+              <a href="/LucioVimercate/" className="hover:text-amber-400 transition-colors">Home</a> | 
+              <a href="/LucioVimercate/privacyPolicy.html" className="hover:text-amber-400 transition-colors">Privacy</a> | 
+              <a href="/LucioVimercate/terms-of-service.html" className="hover:text-amber-400 transition-colors">Termini</a> | 
+              <a href="/LucioVimercate/cookie-policy.html" className="hover:text-amber-400 transition-colors">Cookie</a>
             </div>
             <div className="text-slate-400 text-sm">
               P.IVA: 09082580961
