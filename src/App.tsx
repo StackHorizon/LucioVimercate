@@ -21,7 +21,6 @@ const App = () => (
 				<Sonner />
 				<BrowserRouter>
 					<div className="min-h-screen flex flex-col">
-						{/* Header, Navbar, ecc... */}
 						<Routes>
 							<Route path="/" element={<Index />} />
 							<Route path="/privacy-policy" element={<PrivacyPolicy />} />
