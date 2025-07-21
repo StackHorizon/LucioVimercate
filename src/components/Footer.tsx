@@ -31,9 +31,9 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Informazioni Legali</h3>
             <ul className="space-y-2 text-slate-300">
-              <li><a href="/privacyPolicy.html" className="hover:text-amber-400 transition-colors">Privacy Policy</a></li>
-              <li><a href="/terms-of-service.html" className="hover:text-amber-400 transition-colors">Termini di Servizio</a></li>
-              <li><a href="/cookie-policy.html" className="hover:text-amber-400 transition-colors">Cookie Policy</a></li>
+              <li><a href="/privacy-policy" className="hover:text-amber-400 transition-colors">Privacy Policy</a></li>
+              <li><a href="/terms-of-service" className="hover:text-amber-400 transition-colors">Termini di Servizio</a></li>
+              <li><a href="/cookie-policy" className="hover:text-amber-400 transition-colors">Cookie Policy</a></li>
               <li className="pt-2 text-slate-400 text-sm">P.IVA: 09082580961</li>
             </ul>
           </div>
@@ -48,7 +48,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4" />
-                <span>Vimercate e dintorni</span>
+                <span>Vimercate e dintorni,</span>
                 <span>Monza e Brianza</span>
               </div>
               <div className="flex items-start space-x-2">
@@ -76,9 +76,9 @@ const Footer = () => {
             </div>
             <div className="text-slate-400 text-sm">
               <a href="/" className="hover:text-amber-400 transition-colors">Home</a> | 
-              <a href="/privacyPolicy.html" className="hover:text-amber-400 transition-colors">Privacy</a> | 
-              <a href="/terms-of-service.html" className="hover:text-amber-400 transition-colors">Termini</a> | 
-              <a href="/cookie-policy.html" className="hover:text-amber-400 transition-colors">Cookie</a>
+              <a href="/privacy-policy" className="hover:text-amber-400 transition-colors">Privacy</a> | 
+              <a href="/terms-of-service" className="hover:text-amber-400 transition-colors">Termini</a> | 
+              <a href="/cookie-policy" className="hover:text-amber-400 transition-colors">Cookie</a>
             </div>
             <div className="text-slate-400 text-sm">
               P.IVA: 09082580961
