@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Hammer, Phone, Mail, MapPin, Clock } from 'lucide-react';
 
 const Footer = () => {
@@ -31,9 +32,9 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Informazioni Legali</h3>
             <ul className="space-y-2 text-slate-300">
-              <li><a href="/privacy-policy" className="hover:text-amber-400 transition-colors">Privacy Policy</a></li>
-              <li><a href="/terms-of-service" className="hover:text-amber-400 transition-colors">Termini di Servizio</a></li>
-              <li><a href="/cookie-policy" className="hover:text-amber-400 transition-colors">Cookie Policy</a></li>
+              <li><Link to="/privacy-policy" className="hover:text-amber-400 transition-colors">Privacy Policy</Link></li>
+              <li><Link to="/terms-of-service" className="hover:text-amber-400 transition-colors">Termini di Servizio</Link></li>
+              <li><Link to="/cookie-policy" className="hover:text-amber-400 transition-colors">Cookie Policy</Link></li>
               <li className="pt-2 text-slate-400 text-sm">P.IVA: 09082580961</li>
             </ul>
           </div>
@@ -76,9 +77,9 @@ const Footer = () => {
             </div>
             <div className="text-slate-400 text-sm">
               <a href="/" className="hover:text-amber-400 transition-colors">Home</a> | 
-              <a href="/privacy-policy" className="hover:text-amber-400 transition-colors">Privacy</a> | 
-              <a href="/terms-of-service" className="hover:text-amber-400 transition-colors">Termini</a> | 
-              <a href="/cookie-policy" className="hover:text-amber-400 transition-colors">Cookie</a>
+              <Link to="/privacy-policy" className="hover:text-amber-400 transition-colors">Privacy</Link> | 
+              <Link to="/terms-of-service" className="hover:text-amber-400 transition-colors">Termini</Link> | 
+              <Link to="/cookie-policy" className="hover:text-amber-400 transition-colors">Cookie</Link>
             </div>
             <div className="text-slate-400 text-sm">
               P.IVA: 09082580961

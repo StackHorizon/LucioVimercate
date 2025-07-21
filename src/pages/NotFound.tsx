@@ -1,4 +1,4 @@
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate, Link } from "react-router-dom";
 import { useEffect } from "react";
 import { Hammer, Home, ArrowLeft } from "lucide-react";
 import Footer from "../components/Footer";
@@ -91,22 +91,22 @@ const NotFound = () => {
                 Pagine Principali
               </h2>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <a href="/" className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950/30 dark:to-blue-900/30 p-4 rounded-xl border border-blue-200 dark:border-blue-800 hover:shadow-lg transition-all">
+                <Link to="/" className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950/30 dark:to-blue-900/30 p-4 rounded-xl border border-blue-200 dark:border-blue-800 hover:shadow-lg transition-all">
                   <h3 className="font-semibold text-blue-800 dark:text-blue-300 mb-2">🏠 Home</h3>
                   <p className="text-sm text-slate-600 dark:text-slate-400">Pagina principale del sito</p>
-                </a>
-                <a href="/privacy-policy" className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-950/30 dark:to-green-900/30 p-4 rounded-xl border border-green-200 dark:border-green-800 hover:shadow-lg transition-all">
+                </Link>
+                <Link to="/privacy-policy" className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-950/30 dark:to-green-900/30 p-4 rounded-xl border border-green-200 dark:border-green-800 hover:shadow-lg transition-all">
                   <h3 className="font-semibold text-green-800 dark:text-green-300 mb-2">🔒 Privacy Policy</h3>
                   <p className="text-sm text-slate-600 dark:text-slate-400">Informazioni sulla privacy</p>
-                </a>
-                <a href="/terms-of-service" className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-950/30 dark:to-purple-900/30 p-4 rounded-xl border border-purple-200 dark:border-purple-800 hover:shadow-lg transition-all">
+                </Link>
+                <Link to="/terms-of-service" className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-950/30 dark:to-purple-900/30 p-4 rounded-xl border border-purple-200 dark:border-purple-800 hover:shadow-lg transition-all">
                   <h3 className="font-semibold text-purple-800 dark:text-purple-300 mb-2">📋 Termini di Servizio</h3>
                   <p className="text-sm text-slate-600 dark:text-slate-400">Condizioni di utilizzo</p>
-                </a>
-                <a href="/cookie-policy" className="bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-950/30 dark:to-orange-950/30 p-4 rounded-xl border border-amber-200 dark:border-amber-800 hover:shadow-lg transition-all">
+                </Link>
+                <Link to="/cookie-policy" className="bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-950/30 dark:to-orange-950/30 p-4 rounded-xl border border-amber-200 dark:border-amber-800 hover:shadow-lg transition-all">
                   <h3 className="font-semibold text-amber-800 dark:text-amber-300 mb-2">🍪 Cookie Policy</h3>
                   <p className="text-sm text-slate-600 dark:text-slate-400">Gestione dei cookie</p>
-                </a>
+                </Link>
                 <a href="tel:3293285783" className="bg-gradient-to-br from-emerald-50 to-emerald-100 dark:from-emerald-950/30 dark:to-emerald-900/30 p-4 rounded-xl border border-emerald-200 dark:border-emerald-800 hover:shadow-lg transition-all">
                   <h3 className="font-semibold text-emerald-800 dark:text-emerald-300 mb-2">📞 Contatti</h3>
                   <p className="text-sm text-slate-600 dark:text-slate-400">329 328 5783</p>

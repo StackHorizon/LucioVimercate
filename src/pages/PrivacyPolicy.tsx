@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Hammer, Phone, Building, MapPin, IdCard } from 'lucide-react';
 import Footer from '../components/Footer';
 
@@ -215,7 +216,7 @@ const PrivacyPolicy = () => {
                     <p className="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">
                       <strong>Nessuno di questi servizi raccoglie direttamente dati personali attraverso il nostro sito</strong>, 
                       ma potrebbero applicare le proprie politiche di privacy. Per maggiori dettagli, consulta le rispettive Privacy Policy 
-                      e visita la nostra <a href="/cookie-policy" className="text-red-600 dark:text-red-400 hover:underline font-semibold">Cookie Policy</a>.
+                      e visita la nostra <Link to="/cookie-policy" className="text-red-600 dark:text-red-400 hover:underline font-semibold">Cookie Policy</Link>.
                     </p>
                   </div>
                 </div>
