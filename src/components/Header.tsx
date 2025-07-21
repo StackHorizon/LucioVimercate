@@ -1,126 +1,105 @@
-
 import React, { useState } from 'react';
-import { Menu, X, Hammer, Phone, Clock } from 'lucide-react';
-import ThemeToggle from './ThemeToggle';
+        import { Menu, X, Hammer, Phone } from 'lucide-react';
+        import ThemeToggle from './ThemeToggle';
 
-const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+        const Header = () => {
+          const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-    setIsMenuOpen(false);
-  };
+          const scrollToSection = (id: string) => {
+            const element = document.getElementById(id);
+            if (element) {
+              element.scrollIntoView({ behavior: 'smooth' });
+            }
+            setIsMenuOpen(false);
+          };
 
-  return (
-    <header className="bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm text-slate-900 dark:text-white sticky top-0 z-50 shadow-lg border-b border-slate-200/50 dark:border-slate-700/50">
-      <div className="container mx-auto px-4">
-         
-        
-        <div className="flex items-center justify-between h-16">
-          <div className="flex items-center space-x-3">
-            <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-amber-500 to-orange-500 rounded-xl shadow-lg">
-              <Hammer className="h-6 w-6 text-white" />
-            </div>
-            <div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-300 bg-clip-text text-transparent">
-                Fabbro Luciano
-              </span>
-             </div>
-          </div>
-          
-          <nav className="hidden md:flex items-center space-x-8">
-            <button 
-              onClick={() => scrollToSection('home')} 
-              className="relative hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-medium group"
-            >
-              Home
-              <span className="absolute inset-x-0 bottom-0 h-0.5 bg-amber-500 transform scale-x-0 group-hover:scale-x-100 transition-transform"></span>
-            </button>
-            <button 
-              onClick={() => scrollToSection('servizi')} 
-              className="relative hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-medium group"
-            >
-              Servizi
-              <span className="absolute inset-x-0 bottom-0 h-0.5 bg-amber-500 transform scale-x-0 group-hover:scale-x-100 transition-transform"></span>
-            </button>
-            <button 
-              onClick={() => scrollToSection('galleria')} 
-              className="relative hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-medium group"
-            >
-              Galleria
-              <span className="absolute inset-x-0 bottom-0 h-0.5 bg-amber-500 transform scale-x-0 group-hover:scale-x-100 transition-transform"></span>
-            </button>
-            <button 
-              onClick={() => scrollToSection('contatti')} 
-              className="relative hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-medium group"
-            >
-              Contatti
-              <span className="absolute inset-x-0 bottom-0 h-0.5 bg-amber-500 transform scale-x-0 group-hover:scale-x-100 transition-transform"></span>
-            </button>
-            <a 
-              href="tel:3293285783" 
-              className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white px-6 py-2.5 rounded-xl font-medium transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center space-x-2"
-            >
-              <Phone className="h-4 w-4" />
-              <span>329 328 5783</span>
-            </a>
-            
-          </nav>
+          return (
+            <header className="bg-gradient-to-b from-amber-100 via-white to-amber-50 dark:from-slate-900 dark:via-slate-900 dark:to-slate-800 sticky top-0 z-50 shadow-md border-b border-amber-200 dark:border-slate-700">
+              <div className="max-w-full px-4 sm:px-6 mx-auto">
+                <div className="flex items-center justify-between h-16">
+                  {/* Logo */}
+                  <div className="flex items-center space-x-3">
+                    <div className="flex items-center justify-center w-10 h-10 bg-gradient-to-br from-amber-400 to-orange-500 rounded-xl shadow border border-amber-200 dark:border-slate-700">
+                      <Hammer className="h-5 w-5 text-white" />
+                    </div>
+                    <div>
+                      <span className="text-lg font-extrabold bg-gradient-to-r from-slate-900 via-amber-700 to-slate-700 dark:from-white dark:via-amber-300 dark:to-slate-300 bg-clip-text text-transparent tracking-tight">
+                        Fabbro Luciano
+                      </span>
+                      <div className="text-xs text-slate-500 dark:text-slate-300 font-medium">
+                        Lavorazioni in ferro moderne
+                      </div>
+                    </div>
+                  </div>
+                  {/* Navbar desktop */}
+                  <nav className="hidden md:flex items-center space-x-6">
+                    {[
+                      { id: 'home', label: 'Home' },
+                      { id: 'servizi', label: 'Servizi' },
+                      { id: 'galleria', label: 'Galleria' },
+                      { id: 'contatti', label: 'Contatti' },
+                    ].map((item) => (
+                      <button
+                        key={item.id}
+                        onClick={() => scrollToSection(item.id)}
+                        className="px-2 py-1 font-semibold text-slate-800 dark:text-slate-100 hover:text-amber-600 dark:hover:text-amber-400 transition-colors"
+                      >
+                        {item.label}
+                      </button>
+                    ))}
+                    <a
+                      href="tel:3293285783"
+                      className="bg-amber-500 hover:bg-orange-600 text-white px-4 py-2 rounded-xl font-bold shadow transition-all flex items-center space-x-2 border border-amber-300 dark:border-amber-700"
+                    >
+                      <Phone className="h-4 w-4" />
+                      <span>329 328 5783</span>
+                    </a>
+                    <ThemeToggle />
+                  </nav>
+                  {/* Mobile menu button */}
+                  <div className="flex items-center md:hidden">
+                    <ThemeToggle />
+                    <button
+                      className="ml-2 p-2 bg-white dark:bg-slate-800 rounded-lg shadow border border-amber-200 dark:border-slate-700"
+                      onClick={() => setIsMenuOpen(!isMenuOpen)}
+                    >
+                      {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+                    </button>
+                  </div>
+                </div>
+                {/* Mobile menu */}
+                {isMenuOpen && (
+                  <div className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm flex flex-col md:hidden">
+                    <div className="bg-white dark:bg-slate-900 shadow-2xl rounded-b-2xl mx-2 mt-2 p-4 border border-amber-200 dark:border-slate-700">
+                      <nav className="flex flex-col space-y-2">
+                        {[
+                          { id: 'home', label: 'Home' },
+                          { id: 'servizi', label: 'Servizi' },
+                          { id: 'galleria', label: 'Galleria' },
+                          { id: 'contatti', label: 'Contatti' },
+                        ].map((item) => (
+                          <button
+                            key={item.id}
+                            onClick={() => scrollToSection(item.id)}
+                            className="text-left font-semibold text-slate-800 dark:text-slate-100 hover:text-amber-600 dark:hover:text-amber-400 transition-colors py-3 px-2 rounded-lg"
+                          >
+                            {item.label}
+                          </button>
+                        ))}
+                        <a
+                          href="tel:3293285783"
+                          className="bg-amber-500 hover:bg-orange-600 text-white py-3 px-2 rounded-lg font-bold mt-2 flex items-center space-x-2 shadow border border-amber-300 dark:border-amber-700"
+                        >
+                          <Phone className="h-4 w-4" />
+                          <span>329 328 5783</span>
+                        </a>
+                      </nav>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </header>
+          );
+        };
 
-          <div className="flex items-center space-x-3 md:hidden">
-            
-            <button 
-              className="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </button>
-          </div>
-        </div>
-
-        {isMenuOpen && (
-          <div className="md:hidden bg-white/95 dark:bg-slate-800/95 backdrop-blur-sm border-t border-slate-200/50 dark:border-slate-700/50 shadow-lg">
-            <nav className="flex flex-col space-y-1 p-4">
-              <button 
-                onClick={() => scrollToSection('home')} 
-                className="text-left hover:text-amber-600 dark:hover:text-amber-400 transition-colors py-3 px-4 rounded-lg hover:bg-amber-50 dark:hover:bg-amber-900/20 font-medium"
-              >
-                Home
-              </button>
-              <button 
-                onClick={() => scrollToSection('servizi')} 
-                className="text-left hover:text-amber-600 dark:hover:text-amber-400 transition-colors py-3 px-4 rounded-lg hover:bg-amber-50 dark:hover:bg-amber-900/20 font-medium"
-              >
-                Servizi
-              </button>
-              <button 
-                onClick={() => scrollToSection('galleria')} 
-                className="text-left hover:text-amber-600 dark:hover:text-amber-400 transition-colors py-3 px-4 rounded-lg hover:bg-amber-50 dark:hover:bg-amber-900/20 font-medium"
-              >
-                Galleria
-              </button>
-              <button 
-                onClick={() => scrollToSection('contatti')} 
-                className="text-left hover:text-amber-600 dark:hover:text-amber-400 transition-colors py-3 px-4 rounded-lg hover:bg-amber-50 dark:hover:bg-amber-900/20 font-medium"
-              >
-                Contatti
-              </button>
-              <a 
-                href="tel:3293285783" 
-                className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white py-3 px-4 rounded-lg font-medium mt-3 transition-all duration-300 flex items-center space-x-2 shadow-lg"
-              >
-                <Phone className="h-4 w-4" />
-                <span>329 328 5783</span>
-              </a>
-            </nav>
-          </div>
-        )}
-      </div>
-    </header>
-  );
-};
-
-export default Header;
+        export default Header;
