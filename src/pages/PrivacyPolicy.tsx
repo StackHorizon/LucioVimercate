@@ -51,7 +51,7 @@ const PrivacyPolicy = () => {
 						</p>
 						<div className="mt-8 inline-block px-6 py-3 bg-amber-50 dark:bg-amber-950/20 rounded-lg border border-amber-200 dark:border-amber-800">
 							<span className="text-sm text-amber-700 dark:text-amber-300 font-semibold">
-								Ultimo aggiornamento: 21 luglio 2025
+								Ultimo aggiornamento: 24 settembre 2025
 							</span>
 						</div>
 					</div>
@@ -140,7 +140,7 @@ const PrivacyPolicy = () => {
 										</p>
 									</div>
 
-									<div className="grid md:grid-cols-2 gap-6">
+									<div className="grid md:grid-cols-1 gap-6">
 										<div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950/30 dark:to-blue-900/30 p-6 rounded-xl border border-blue-200 dark:border-blue-800">
 											<h3 className="text-lg font-semibold text-blue-800 dark:text-blue-300 mb-3 flex items-center">
 												<Phone className="h-6 w-6 mr-3" />
@@ -153,19 +153,7 @@ const PrivacyPolicy = () => {
 											</p>
 										</div>
 
-										<div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-950/30 dark:to-purple-900/30 p-6 rounded-xl border border-purple-200 dark:border-purple-800">
-											<h3 className="text-lg font-semibold text-purple-800 dark:text-purple-300 mb-3 flex items-center">
-												<span className="text-2xl mr-3">📧</span>
-												Contatto Email
-											</h3>
-											<p className="text-slate-700 dark:text-slate-300 text-sm">
-												Apre il client di posta dell'utente.{" "}
-												<strong>
-													Nessun messaggio o indirizzo viene memorizzato
-												</strong>{" "}
-												sui nostri server.
-											</p>
-										</div>
+
 									</div>
 								</div>
 							</div>

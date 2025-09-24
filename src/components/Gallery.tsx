@@ -1,12 +1,12 @@
 import React from 'react';
 
 const images = [
-  { src: "imm1.jpeg", title: "Cancello in ferro battuto" },
-  { src: "imm2.jpeg", title: "Ringhiera moderna" },
-  { src: "imm3.jpeg", title: "Porta blindata" },
-  { src: "imm4.jpeg", title: "Serranda automatica" },
-  { src: "imm5.jpeg", title: "Inferriata decorativa" },
-  { src: "imm6.jpeg", title: "Scala in ferro" }
+  { src: "imm1.jpeg", title: "" },
+  { src: "imm2.jpeg", title: "" },
+  { src: "imm3.jpeg", title: "" },
+  { src: "imm4.jpeg", title: "" },
+  { src: "imm5.jpeg", title: "" },
+  { src: "imm6.jpeg", title: "" }
 ];
 
 const Gallery = () => (
